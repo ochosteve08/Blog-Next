@@ -4,7 +4,7 @@ type Props = {
 
 const UserPosts = async ({ promise }: Props) => {
   const posts = await promise;
-  console.log(posts);
+
   const content = posts.map((post, index) => {
     return (
       <article className="mb-4  w-1/2" key={post.id}>
