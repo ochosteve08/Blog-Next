@@ -31,6 +31,7 @@ type User =
   }
 
   type Result= {
+    extract: ReactNode
     pageid: string,
     title: string,
     extracted: string,
