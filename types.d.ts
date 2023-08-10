@@ -29,3 +29,20 @@ type User =
     "title": string,
     "body": string,
   }
+
+  type Result= {
+    pageid: string,
+    title: string,
+    extracted: string,
+    thumbnail?:{
+      source:string,
+      width:number,
+      height:number
+    }
+  }
+
+  type SearchResult={
+    query?:{
+      pages?:Result[],
+    }
+  }
