@@ -1,8 +1,26 @@
 import getWikiResult from "@/lib/getWikiResult";
+import type { Metadata } from "next";
 
 type Props = {
   params: {
     searchTerm: string;
+  };
+};
+
+export const generateMetadata = async ({
+  params: { searchTerm },
+}: Props): Promise<Metadata> => {
+  const wikiData: Promise<SearchResult> = getWikiResult(searchTerm);
+  const data = await wikiData;
+  const displayTerm = searchTerm.replaceAll("%20", "");
+  if (data?.query?.pages) {
+    return {
+      title: `${displayTerm} Not Found`,
+    };
+  }
+  return {
+    title: `${displayTerm}`,
+    description: `search results of ${displayTerm}`,
   };
 };
 
