@@ -4,7 +4,7 @@ import { FaYoutube, FaTwitter, FaGithub } from "react-icons/fa";
 const Navbar = () => {
   return (
     <nav className="bg-slate-600 p-4 sticky top-0 drop-shadow-xl z-10">
-      <div className=" mx-auto flex max-w-6xl justify-between flex-col sm:flex-row">
+      <div className=" mx-auto flex max-w-prose justify-between flex-col sm:flex-row">
         <h1 className="text-3xl font-bold text-white grid place-content-center mb-2 md:mb-0 ">
           <Link
             href={"/"}
@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="flex flex-row justify-center sm:justify-evenly space-x-6 align-middle text-white text-4xl lg:text-5xl ">
           <Link
             href={"https://www.youtube.com/channel/UC3aNNzv_PIG8CkWxtM_95lg"}
-            className="text-red-300 hover:text-red-400"
+            className="text-red-700 hover:text-red-400"
           >
             <FaYoutube />
           </Link>
