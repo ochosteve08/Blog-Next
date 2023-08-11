@@ -1,6 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Head from "next/head";
+import Navbar from "./components/Navbar";
+import MyProfilePic from "./components/MyProfilePic";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,10 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-     
-      <body className="bg-slate-800 text-white" >
-     
-        {children} 
+      <Head>
+        <link rel="icon" href="./favicon.ico" />
+      </Head>
+      <body className="bg-slate-800 text-white">
+        <Navbar />
+        <MyProfilePic />
+        {children}
       </body>
     </html>
   );
