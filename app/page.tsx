@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
+import Posts from "./components/Posts";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
           I'm <span className="font-bold">Steve</span>
         </span>
       </p>
+      <Posts/>
     </main>
   );
 }
