@@ -22,7 +22,7 @@ const Navbar = () => {
           </Link>
           <Link
             href={"https://github.com/ochosteve08"}
-            className="text-gray-800 hover:text-white"
+            className=" text-white/60 hover:text-gray-800"
           >
             <FaGithub />
           </Link>
