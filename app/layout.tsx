@@ -8,8 +8,8 @@ import MyProfilePic from "./components/MyProfilePic";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Blog App",
-  description: "First Next.js Project",
+  title: "Steve's blog",
+  description: "created by steve",
 };
 
 export default function RootLayout({
